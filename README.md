@@ -5,10 +5,13 @@ Defensive pressure is widely acknowledged as a key mechanism through which teams
 
 #### Usecase(s)
 
-The model estimates defender pressure using arrival-time based influence functions, aggregated at the frame level and standardised across a match. Disruption is defined as a change in possession occurring within three seconds (30 frames at 10 FPS). By analysing the relationship between pressure intensity and disruption probability, the framework produces **pressure–disruption** curves that reveal how marginal increases in pressure affect turnover likelihood. These curves are further segmented by defensive phase (e.g. high block, low block, chaotic defending), enabling phase-specific interpretation of pressure effectiveness. This approach can be used to:
-•	Evaluate whether increased pressure intensity yields diminishing or accelerating returns (in general or phase-wise)
-•	Compare defensive phases based on pressure efficiency rather than volume
-•	Identify tactical contexts where pressure is most likely to force turnovers
+Defensive pressure is estimated using arrival-time–based influence functions, where each defender’s contribution decays exponentially with time-to-ball. Individual influences are aggregated at the frame level and standardised within a match. Disruption is defined as a change in possession occurring within three seconds (30 frames at 10 FPS).  
+
+By analysing the relationship between pressure intensity and disruption probability, the framework produces **pressure–disruption curves** that describe how marginal increases in pressure affect turnover likelihood. These curves are further segmented by defensive phase (e.g. high block, low block, chaotic defending), enabling phase-specific interpretation of pressure effectiveness. The framework can be used to:
+
+- Evaluate whether increasing pressure yields diminishing or accelerating returns  
+- Compare defensive phases based on pressure efficiency rather than volume  
+- Identify tactical contexts where pressure is most likely to force turnovers
 
 #### Potential Audience
 
@@ -20,4 +23,4 @@ https://youtu.be/vm-nh2vJyKQ
 
 ## Run Instructions
 
-Run submission.ipynb in a clean environment. All helper functions are imported from the src/ directory. Tracking data is loaded directly from the SkillCorner Open Data repository.
+Run `submission.ipynb` in a clean environment. All helper functions are imported from the `src/` directory. Tracking data is loaded directly from the SkillCorner Open Data repository.
