@@ -1,4 +1,4 @@
-## Analyst Track Abstract
+## Modelling Defensive Pressure Conversion into Possession Disruption | Abstract
 #### Introduction
 
 Defensive pressure is widely acknowledged as a key mechanism through which teams disrupt opposition possession, yet quantifying how pressure translates into actual possession loss remains an open challenge. This project introduces a spatiotemporal framework that links defensive pressure intensity to short-horizon possession disruption, using tracking data and phase-of-play context. Rather than evaluating pressure as an isolated action, the model focuses on its **conversion efficiency**, the probability that pressure leads to a turnover within a defined temporal window.
